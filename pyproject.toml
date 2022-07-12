@@ -7,7 +7,7 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-arcade = "^2.5.7"
+arcade = "^2.6.15"
 
 [tool.poetry.dev-dependencies]
 

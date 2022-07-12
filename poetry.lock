@@ -1,0 +1,132 @@
+[[package]]
+name = "arcade"
+version = "2.6.15"
+description = "Arcade Game Development Library"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+pillow = ">=9.1.1,<9.2.0"
+pyglet = "2.0.dev18"
+pymunk = ">=6.2.1,<6.3.0"
+pytiled-parser = "2.0.1"
+
+[package.extras]
+dev = ["pytest", "flake8", "mypy", "coverage", "coveralls", "pytest-mock", "pytest-cov", "Sphinx (==4.5.0)", "Pygments (==2.10.0)", "sphinx-copybutton (==0.5.0)", "sphinx-sitemap (==2.2.0)", "dirsync (==2.2.5)", "pyyaml (==6.0)", "docutils (<0.18)", "sphinx-sitemap", "furo", "sphinx-copybutton", "dirsync", "wheel"]
+docs = ["Sphinx (==4.5.0)", "Pygments (==2.10.0)", "sphinx-copybutton (==0.5.0)", "sphinx-sitemap (==2.2.0)", "dirsync (==2.2.5)", "pyyaml (==6.0)", "docutils (<0.18)", "sphinx-sitemap", "furo", "sphinx-copybutton", "dirsync", "wheel"]
+
+[[package]]
+name = "attrs"
+version = "21.4.0"
+description = "Classes Without Boilerplate"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[package.extras]
+dev = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "zope.interface", "furo", "sphinx", "sphinx-notfound-page", "pre-commit", "cloudpickle"]
+docs = ["furo", "sphinx", "zope.interface", "sphinx-notfound-page"]
+tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "zope.interface", "cloudpickle"]
+tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "cloudpickle"]
+
+[[package]]
+name = "cffi"
+version = "1.15.1"
+description = "Foreign Function Interface for Python calling C code."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pycparser = "*"
+
+[[package]]
+name = "pillow"
+version = "9.1.1"
+description = "Python Imaging Library (Fork)"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+docs = ["olefile", "sphinx (>=2.4)", "sphinx-copybutton", "sphinx-issues (>=3.0.1)", "sphinx-removed-in", "sphinx-rtd-theme (>=1.0)", "sphinxext-opengraph"]
+tests = ["check-manifest", "coverage", "defusedxml", "markdown2", "olefile", "packaging", "pyroma", "pytest", "pytest-cov", "pytest-timeout"]
+
+[[package]]
+name = "pycparser"
+version = "2.21"
+description = "C parser in Python"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[[package]]
+name = "pyglet"
+version = "2.0.dev18"
+description = "Cross-platform windowing and multimedia library"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "pymunk"
+version = "6.2.1"
+description = "Pymunk is a easy-to-use pythonic 2d physics library"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+cffi = ">=1.15.0"
+
+[package.extras]
+dev = ["pyglet", "pygame", "sphinx", "aafigure", "wheel", "matplotlib"]
+
+[[package]]
+name = "pytiled-parser"
+version = "2.0.1"
+description = "A library for parsing JSON formatted Tiled Map Editor maps and tilesets."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+attrs = ">=18.2.0"
+typing-extensions = "*"
+
+[package.extras]
+build = ["pep517"]
+docs = ["sphinx", "sphinx-rtd-theme"]
+tests = ["pytest", "pytest-cov", "black", "flake8", "mypy", "isort (>=4.2.5,<5)"]
+zstd = ["zstd (==1.4.8.1)"]
+
+[[package]]
+name = "typing-extensions"
+version = "4.3.0"
+description = "Backported and Experimental Type Hints for Python 3.7+"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "47bf7732ca4758a1a03659dc9ad48cbb6940138f1663e850b415b93717865c07"
+
+[metadata.files]
+arcade = []
+attrs = [
+    {file = "attrs-21.4.0-py2.py3-none-any.whl", hash = "sha256:2d27e3784d7a565d36ab851fe94887c5eccd6a463168875832a1be79c82828b4"},
+    {file = "attrs-21.4.0.tar.gz", hash = "sha256:626ba8234211db98e869df76230a137c4c40a12d72445c45d5f5b716f076e2fd"},
+]
+cffi = []
+pillow = []
+pycparser = [
+    {file = "pycparser-2.21-py2.py3-none-any.whl", hash = "sha256:8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"},
+    {file = "pycparser-2.21.tar.gz", hash = "sha256:e644fdec12f7872f86c58ff790da456218b10f863970249516d60a5eaca77206"},
+]
+pyglet = []
+pymunk = []
+pytiled-parser = []
+typing-extensions = []
