@@ -10,8 +10,10 @@ class TetrisWindow(arcade.Window):
 
         self.rectangle_width = 200
         self.rectangle_height = 100
-        self.center_x = 0
-        self.center_y = 0
+        self.center_x = 100
+        self.center_y = 100
+        self.rate_x = 200
+        self.rate_y = 100
 
     def on_draw(self):
         arcade.start_render()
@@ -19,14 +21,20 @@ class TetrisWindow(arcade.Window):
                                      arcade.color.BLUE)
 
     def on_update(self, delta_time: float):
-        self.center_x += 100 * delta_time
-        self.center_y += 100 * delta_time
+        # self.center_x += 100 * delta_time
+        # self.center_y += 100 * delta_time
+        self.center_x += self.rate_x * delta_time
+        self.center_y += self.rate_y * delta_time
 
+        # to make the triangle bounce when it reaches the sides of the window
+        if self.center_x + 100 > 720 or self.center_x - 100 < 0:
+            self.rate_x *= -1
+        if self.center_y + 50 > 985 or self.center_y - 50 < 0:
+            self.rate_y *= -1
 
 
 TetrisWindow(720, 985, 'Tetris')
 arcade.run()
-
 
 #
 #     def setup(self):
