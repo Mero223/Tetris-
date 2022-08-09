@@ -1,4 +1,3 @@
-
 import arcade
 
 
@@ -9,8 +8,20 @@ class TetrisWindow(arcade.Window):
         arcade.set_background_color(arcade.color.AMAZON)
         arcade.set_background_color((0, 0, 0))
 
+        self.rectangle_width = 200
+        self.rectangle_height = 100
+        self.center_x = 0
+        self.center_y = 0
+
     def on_draw(self):
         arcade.start_render()
+        arcade.draw_rectangle_filled(self.center_x, self.center_y, self.rectangle_width, self.rectangle_height,
+                                     arcade.color.BLUE)
+
+    def on_update(self, delta_time: float):
+        self.center_x += 100 * delta_time
+        self.center_y += 100 * delta_time
+
 
 
 TetrisWindow(720, 985, 'Tetris')
